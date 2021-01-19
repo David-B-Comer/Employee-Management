@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Employee } from './../employee';
+import { Component, OnInit, Input } from '@angular/core';
+import { EmployeeService } from '../employee.service';
+import { EmployeeListComponent } from '../employee-list/employee-list.component';
 
 @Component({
-  selector: 'app-employee-details',
-  templateUrl: './employee-details.component.html',
-  styleUrls: ['./employee-details.component.css']
+selector: 'app-employee-details',
+templateUrl: './employee-details.component.html',
+styleUrls: ['./employee-details.component.css']
 })
 export class EmployeeDetailsComponent implements OnInit {
 
-  constructor() { }
+@Input() employee: Employee;
 
-  ngOnInit(): void {
+constructor(private employeeService: EmployeeService, private listComponent: EmployeeListComponent) { }
+
+  ngOnInit() {
   }
-
 }
