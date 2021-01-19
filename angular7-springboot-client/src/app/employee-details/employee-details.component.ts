@@ -16,4 +16,5 @@ constructor(private employeeService: EmployeeService, private listComponent: Emp
 
   ngOnInit() {
   }
+
 }
