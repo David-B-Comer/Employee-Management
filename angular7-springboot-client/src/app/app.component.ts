@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+selector: 'app-root',
+templateUrl: './app.component.html',
+styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular7-springboot-client';
+title = 'Angular 7 + Spring Boot 2 + Spring Data JPA + MySQL + CRUD Tutorial';
 }
